@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:5500/beginning/webpage/form.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h2>Online Registration Form</h2>
+
+    <!--How to create a form-->
+    <fieldset style="width: 400px">
+      <!--how to organise your html from element to rectangular section-->
+      <legend>register to become one of us</legend>
+      <!--how to include a description in a fieldset-->
+      <form action="http://127.0.0.1:5500/beginning/webpage/success.html" method="GET">
+        <!--how to include name field into html form-->
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" id="fname" placeholder="Fatoumata" required="">
+          <font color="red">*</font>
+        </div>
+        <br>
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" id="lname" placeholder="camara">
+          <font color="red">*</font>
+        </div>
+        <br>
+        <!--how to introduce gender field in html-->
+        <div>
+          Gender:
+          <label for="male-gender">Male</label>
+          <input type="radio" name="gender" value="Male">
+
+          <label for="female-gender">Female</label>
+          <input type="radio" name="gender" value="F">
+        </div>
+
+        <br>
+        <!--how to include age-->
+        <div>
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" min="7" max="200" step="5">
+        </div>
+        <br>
+        <!--how to add email-->
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="fc123@gamil.com" required="">
+          <font color="red">*</font>
+        </div>
+        <br>
+        <!--how to add password-->
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" required="">
+          <font color="red">*</font>
+        </div>
+        <!--how to include day,month, year of birth-->
+        <h3>Enter your date of birth</h3>
+        <div>
+          <label for="day">Day</label>
+          <select name="day" id="day">
+            <option value="0" selected="disable">Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+
+          <label for="month">Month</label>
+          <select name="month" id="Month">
+            <option value="0" selected="disable">Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="october">october</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+
+          <label for="year">Year</label>
+          <select name="year" id="year">
+            <option value="0" selected="disable">Year</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+          </select>
+        </div>
+
+        <h4>Or choose from calender</h4>
+        <div>
+          <label for="dob">Date of birth</label>
+          <input type="date" name="date" min="2020-9-1" required="">
+        </div>
+        <br>
+        <!--how to include telephone-->
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone">
+        </div>
+        <br>
+
+        <div>
+          <label for="file">File</label>
+          <input type="file" id="file">
+        </div>
+        <br>
+
+        <div>
+          comment:
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+          <label for="url">URL</label>
+          <input type="url" name="url" id="url" placeholder="https:www.htmlCourse">
+        </div>
+        <br>
+
+        <div>
+          <label for="color">Color</label>
+          <input type="color" name="color" id="color">
+        </div>
+        <br>
+
+        <div>
+          <label for="agreement">I agree to the terms and conditions</label>
+          <input type="checkbox" name="agree" id="agreement">
+        </div>
+
+        <h3>Which area do you like to acquire skill</h3>
+
+        <div>
+          <label for="soft-dev">Software Developer</label>
+          <input type="checkbox"> <br>
+
+          <label for="web-dev">Websit Developer</label>
+          <input type="checkbox"> <br>
+
+          <label for="data-adm">Database Administrator</label>
+          <input type="checkbox"> <br>
+        </div>
+        <br>
+
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+
+        <!--<marquee behavior="" direction="right">
+          <h1>happy birthday</h1>
+        </marquee>  -->
+      </form>
+    </fieldset>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
